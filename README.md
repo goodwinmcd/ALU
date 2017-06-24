@@ -1,0 +1,1 @@
+Source code for implementing a 4-Bit ALU in my embedded systems class.  The ALU was implemented using a hiearchal approach.  I seperatly implemented a arithmetic unit, a logic unit, Full Adder, and a mux.  I then mapped ports from each individual component so that they would work together for a fully functional ALU. The source code is the .vhd formatted files.  

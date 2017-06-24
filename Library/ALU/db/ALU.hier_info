@@ -1,0 +1,217 @@
+|ALU
+A[0] => Arithmetic_Unit:Arithmetic_Unit_1.a[0]
+A[0] => Logic_Unit:Logic_Unit_1.A[0]
+A[1] => Arithmetic_Unit:Arithmetic_Unit_1.a[1]
+A[1] => Logic_Unit:Logic_Unit_1.A[1]
+A[2] => Arithmetic_Unit:Arithmetic_Unit_1.a[2]
+A[2] => Logic_Unit:Logic_Unit_1.A[2]
+A[3] => Arithmetic_Unit:Arithmetic_Unit_1.a[3]
+A[3] => Logic_Unit:Logic_Unit_1.A[3]
+B[0] => mux2to1:mux_1.d1[0]
+B[0] => Logic_Unit:Logic_Unit_1.B[0]
+B[0] => mux2to1:mux_1.d2[0]
+B[1] => mux2to1:mux_1.d1[1]
+B[1] => Logic_Unit:Logic_Unit_1.B[1]
+B[1] => mux2to1:mux_1.d2[1]
+B[2] => mux2to1:mux_1.d1[2]
+B[2] => Logic_Unit:Logic_Unit_1.B[2]
+B[2] => mux2to1:mux_1.d2[2]
+B[3] => mux2to1:mux_1.d1[3]
+B[3] => Logic_Unit:Logic_Unit_1.B[3]
+B[3] => mux2to1:mux_1.d2[3]
+opCode[0] => Arithmetic_Unit:Arithmetic_Unit_1.cin
+opCode[0] => Logic_Unit:Logic_Unit_1.opCode[0]
+opCode[1] => mux2to1:mux_1.s[0]
+opCode[1] => Logic_Unit:Logic_Unit_1.opCode[1]
+opCode[2] => mux2to1:mux_1.s[1]
+opCode[2] => Logic_Unit:Logic_Unit_1.opCode[2]
+opCode[3] => mux1to1:MUX_2.s
+F[0] << mux1to1:MUX_2.y[0]
+F[1] << mux1to1:MUX_2.y[1]
+F[2] << mux1to1:MUX_2.y[2]
+F[3] << mux1to1:MUX_2.y[3]
+cout << Arithmetic_Unit:Arithmetic_Unit_1.cout
+
+
+|ALU|mux2to1:mux_1
+d0[0] => Mux3.IN0
+d0[1] => Mux2.IN0
+d0[2] => Mux1.IN0
+d0[3] => Mux0.IN0
+d1[0] => Mux3.IN1
+d1[1] => Mux2.IN1
+d1[2] => Mux1.IN1
+d1[3] => Mux0.IN1
+d2[0] => Mux3.IN2
+d2[1] => Mux2.IN2
+d2[2] => Mux1.IN2
+d2[3] => Mux0.IN2
+d3[0] => Mux3.IN3
+d3[1] => Mux2.IN3
+d3[2] => Mux1.IN3
+d3[3] => Mux0.IN3
+s[0] => Mux0.IN5
+s[0] => Mux1.IN5
+s[0] => Mux2.IN5
+s[0] => Mux3.IN5
+s[1] => Mux0.IN4
+s[1] => Mux1.IN4
+s[1] => Mux2.IN4
+s[1] => Mux3.IN4
+F[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Arithmetic_Unit:Arithmetic_Unit_1
+a[0] => FullAdder:full_adder_1.A
+a[1] => FullAdder:full_adder_2.A
+a[2] => FullAdder:full_adder_3.A
+a[3] => FullAdder:full_adder_4.A
+b[0] => FullAdder:full_adder_1.B
+b[1] => FullAdder:full_adder_2.B
+b[2] => FullAdder:full_adder_3.B
+b[3] => FullAdder:full_adder_4.B
+cin => FullAdder:full_adder_1.Cin
+F[0] <= FullAdder:full_adder_1.S
+F[1] <= FullAdder:full_adder_2.S
+F[2] <= FullAdder:full_adder_3.S
+F[3] <= FullAdder:full_adder_4.S
+cout <= FullAdder:full_adder_4.cout
+
+
+|ALU|Arithmetic_Unit:Arithmetic_Unit_1|FullAdder:full_adder_1
+A => cout.IN0
+A => cout.IN0
+A => cout.IN0
+A => S.IN0
+B => S.IN1
+B => cout.IN1
+B => S.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => S.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Arithmetic_Unit:Arithmetic_Unit_1|FullAdder:full_adder_2
+A => cout.IN0
+A => cout.IN0
+A => cout.IN0
+A => S.IN0
+B => S.IN1
+B => cout.IN1
+B => S.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => S.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Arithmetic_Unit:Arithmetic_Unit_1|FullAdder:full_adder_3
+A => cout.IN0
+A => cout.IN0
+A => cout.IN0
+A => S.IN0
+B => S.IN1
+B => cout.IN1
+B => S.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => S.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Arithmetic_Unit:Arithmetic_Unit_1|FullAdder:full_adder_4
+A => cout.IN0
+A => cout.IN0
+A => cout.IN0
+A => S.IN0
+B => S.IN1
+B => cout.IN1
+B => S.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => cout.IN1
+Cin => S.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Logic_Unit:Logic_Unit_1
+A[0] => F.IN0
+A[0] => F.IN0
+A[0] => F.IN0
+A[0] => Mux3.IN6
+A[1] => F.IN0
+A[1] => F.IN0
+A[1] => F.IN0
+A[1] => Mux2.IN6
+A[2] => F.IN0
+A[2] => F.IN0
+A[2] => F.IN0
+A[2] => Mux1.IN6
+A[3] => F.IN0
+A[3] => F.IN0
+A[3] => F.IN0
+A[3] => Mux0.IN6
+B[0] => F.IN1
+B[0] => F.IN1
+B[0] => F.IN1
+B[0] => Mux3.IN7
+B[1] => F.IN1
+B[1] => F.IN1
+B[1] => F.IN1
+B[1] => Mux2.IN7
+B[2] => F.IN1
+B[2] => F.IN1
+B[2] => F.IN1
+B[2] => Mux1.IN7
+B[3] => F.IN1
+B[3] => F.IN1
+B[3] => F.IN1
+B[3] => Mux0.IN7
+opCode[0] => Mux0.IN10
+opCode[0] => Mux1.IN10
+opCode[0] => Mux2.IN10
+opCode[0] => Mux3.IN10
+opCode[1] => Mux0.IN9
+opCode[1] => Mux1.IN9
+opCode[1] => Mux2.IN9
+opCode[1] => Mux3.IN9
+opCode[2] => Mux0.IN8
+opCode[2] => Mux1.IN8
+opCode[2] => Mux2.IN8
+opCode[2] => Mux3.IN8
+F[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|mux1to1:MUX_2
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

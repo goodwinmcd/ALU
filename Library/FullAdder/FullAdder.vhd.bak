@@ -1,0 +1,17 @@
+Library ieee;
+USE ieee.std_logic_1164.all;
+ENTITY FullAdder is
+	port
+	(
+		A	: in std_logic;
+		B	: in std_logic;
+		Cin: in std_logic;
+		cout, S: out std_logic
+	);
+end FullAdder;
+
+architecture logicfunction of Fulladder is 
+begin
+	S<=(not B and ((not cout and A) or (cout and not A))) or (B and ((not cout and not A) or (cout and A)));
+	cout<=(A and cout) or (B and ((not cout and A) or (cout and not A)));
+end logicfunction;

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Goodwin/Documents/Embedded Systems/Projects/Library/Logic_Unit/simulation/qsim
+vLogic_Unit
+Z1 !s110 1442122941
+!i10b 1
+!s100 Vfj0WWHJGcEUV9:a3g1z02
+IB[L=Nj@f[zn6VnJ122cR:1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1442122941
+8Logic_Unit.vo
+FLogic_Unit.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1442122941.680000
+!s107 Logic_Unit.vo|
+!s90 -work|work|Logic_Unit.vo|
+!i113 1
+Z4 o-work work
+n@logic_@unit
+vLogic_Unit_vlg_check_tst
+R1
+!i10b 1
+!s100 d@KeV[Z>1j3@>Zk7ncnmV2
+IcnadE[i^[0@;IiVCbWhFA3
+R2
+R0
+Z5 w1442122939
+Z6 8logic_unit.vwf.vt
+Z7 Flogic_unit.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1442122941.724000
+Z9 !s107 logic_unit.vwf.vt|
+Z10 !s90 -work|work|logic_unit.vwf.vt|
+!i113 1
+R4
+n@logic_@unit_vlg_check_tst
+vLogic_Unit_vlg_sample_tst
+R1
+!i10b 1
+!s100 CCkM`f=UM>lYndkjCh43=3
+IOkXDfW35Y@UaeGVjLlmIA0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@logic_@unit_vlg_sample_tst
+vLogic_Unit_vlg_vec_tst
+R1
+!i10b 1
+!s100 8DLPb:2C>a^V=>8]DVGg:2
+IY9PIiEa=YOGZWYi38UTjB3
+R2
+R0
+R5
+R6
+R7
+L0 210
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@logic_@unit_vlg_vec_tst

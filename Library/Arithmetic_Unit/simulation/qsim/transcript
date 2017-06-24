@@ -1,0 +1,34 @@
+# do Arithmetic_Unit.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:21:57 on Sep 12,2015
+# vlog -work work Arithmetic_Unit.vo 
+# -- Compiling module Arithmetic_Unit
+# 
+# Top level modules:
+# 	Arithmetic_Unit
+# End time: 12:21:57 on Sep 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:21:57 on Sep 12,2015
+# vlog -work work ArithemticTest.vwf.vt 
+# -- Compiling module Arithmetic_Unit_vlg_sample_tst
+# -- Compiling module Arithmetic_Unit_vlg_check_tst
+# -- Compiling module Arithmetic_Unit_vlg_vec_tst
+# 
+# Top level modules:
+# 	Arithmetic_Unit_vlg_vec_tst
+# End time: 12:21:57 on Sep 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "Arithmetic_Unit.do" 
+# Start time: 12:21:57 on Sep 12,2015
+# Loading work.Arithmetic_Unit_vlg_vec_tst
+# Loading work.Arithmetic_Unit
+# Loading work.Arithmetic_Unit_vlg_sample_tst
+# Loading work.Arithmetic_Unit_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : ArithemticTest.vwf.vt(233)
+#    Time: 1 us  Iteration: 0  Instance: /Arithmetic_Unit_vlg_vec_tst/tb_out
+# End time: 12:21:58 on Sep 12,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

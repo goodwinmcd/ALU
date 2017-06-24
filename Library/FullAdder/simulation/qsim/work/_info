@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Goodwin/Documents/Embedded Systems/Projects/Library/FullAdder/simulation/qsim
+vFullAdder
+Z1 !s110 1442084617
+!i10b 1
+!s100 XAO[XZ67[B=eD]Vfho7]83
+IaNlieen;oT?48D8BU;@ah1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1442084614
+8FullAdder.vo
+FFullAdder.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1442084616.881000
+!s107 FullAdder.vo|
+!s90 -work|work|FullAdder.vo|
+!i113 1
+Z4 o-work work
+n@full@adder
+vFullAdder_vlg_check_tst
+R1
+!i10b 1
+!s100 2f<DQh8AJ>2R;_1K5YG`60
+IX8Hz2iN0S6L9cN_EAY>?C1
+R2
+R0
+Z5 w1442084613
+Z6 8FullAdderTest.vwf.vt
+Z7 FFullAdderTest.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1442084617.113000
+Z9 !s107 FullAdderTest.vwf.vt|
+Z10 !s90 -work|work|FullAdderTest.vwf.vt|
+!i113 1
+R4
+n@full@adder_vlg_check_tst
+vFullAdder_vlg_sample_tst
+R1
+!i10b 1
+!s100 SH0[Z<I6>RBGkEEYKf>><2
+IBWjcMoK8M7DDBAlF:3cXK1
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@full@adder_vlg_sample_tst
+vFullAdder_vlg_vec_tst
+R1
+!i10b 1
+!s100 7N??NYZ1gkfY6;I]hSVZk2
+IY[icT<[ACgm2RA4QL>V>c1
+R2
+R0
+R5
+R6
+R7
+L0 184
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@full@adder_vlg_vec_tst

@@ -1,0 +1,49 @@
+Library ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY LogicUnit is
+	port
+	(
+		A  :  in std_logic_vector (3 downto 0);
+		B  :  in std_logic_vector (3 downto 0);
+		opCode  :  out std_logic_vector (2 downto 0);
+		F  :  out  std_logic_vector (3 downto 0);
+	)
+end LogicUnit
+
+architecture logicFunction of LogicUnit is
+
+begin
+	if (opCode = '000') then
+		F <= A AND B;
+	end if;
+	
+	if (opCode = '001') then
+		F <= NOT (A AND B);
+	end if;
+	
+	if (opCode = '010') then
+		F <= A OR B;
+	end if;
+	
+	if (opCode= '011') then
+		F <= NOT (A OR B);
+	end if;
+
+	if (opCode = '100') then
+		F <= A XOR B;
+	end if;
+
+	if (opCode = '101') then
+		F <= NOT (A XOR B);
+	end if;
+
+	if (opCode = '110') then
+		F <= NOT A;
+	end if;
+
+	if (opCode = '111') then
+		F <= NOT B;
+	end if;
+
+end logicFunction;

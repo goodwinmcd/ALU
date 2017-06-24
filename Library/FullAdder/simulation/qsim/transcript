@@ -1,0 +1,32 @@
+# do FullAdder.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:03:36 on Sep 12,2015
+# vlog -work work FullAdder.vo 
+# -- Compiling module FullAdder
+# 
+# Top level modules:
+# 	FullAdder
+# End time: 12:03:37 on Sep 12,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:03:37 on Sep 12,2015
+# vlog -work work FullAdderTest.vwf.vt 
+# -- Compiling module FullAdder_vlg_sample_tst
+# -- Compiling module FullAdder_vlg_check_tst
+# -- Compiling module FullAdder_vlg_vec_tst
+# 
+# Top level modules:
+# 	FullAdder_vlg_vec_tst
+# End time: 12:03:37 on Sep 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "FullAdder.do" 
+# Start time: 12:03:37 on Sep 12,2015
+# Loading work.FullAdder_vlg_vec_tst
+# Loading work.FullAdder
+# Loading work.FullAdder_vlg_sample_tst
+# Loading work.FullAdder_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : FullAdderTest.vwf.vt(180)
+#    Time: 1 us  Iteration: 0  Instance: /FullAdder_vlg_vec_tst/tb_out
+# End time: 12:03:37 on Sep 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Goodwin/Documents/Embedded Systems/Projects/Library/ALU/simulation/qsim
+vALU
+Z0 !s110 1442365887
+!i10b 1
+!s100 NaT=R=1<JATGlgB[dSdPo3
+IR0bF]g_ZofRANT:]de]HD0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/Goodwin/Documents/Embedded Systems/Projects/McDonald, Homework2/Library/ALU/simulation/qsim
+w1442365882
+8ALU.vo
+FALU.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1442365887.194000
+!s107 ALU.vo|
+!s90 -work|work|ALU.vo|
+!i113 1
+Z4 o-work work
+n@a@l@u
+vALU_vlg_check_tst
+R0
+!i10b 1
+!s100 1A@8Wd@iI9h3@TOf?W1Kk2
+I2JF^geG<]a32Y?lglPUVY3
+R1
+R2
+Z5 w1442365880
+Z6 8ALUTest.vwf.vt
+Z7 FALUTest.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1442365887.265000
+Z9 !s107 ALUTest.vwf.vt|
+Z10 !s90 -work|work|ALUTest.vwf.vt|
+!i113 1
+R4
+n@a@l@u_vlg_check_tst
+vALU_vlg_sample_tst
+R0
+!i10b 1
+!s100 SDNJ=5RT40Q7UaO6TE9MC3
+I=@aV>Ej9d=E[DGOg6YeSb3
+R1
+R2
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@a@l@u_vlg_sample_tst
+vALU_vlg_vec_tst
+R0
+!i10b 1
+!s100 Pki:?X7HP1hBg?Qd^Klba3
+I^f_0K:k`BIoiSiUiemkmn3
+R1
+R2
+R5
+R6
+R7
+L0 237
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@a@l@u_vlg_vec_tst
